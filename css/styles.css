@@ -37,6 +37,10 @@ body {
     background: var(--color-body);
 }
 
+.header-first{
+border-bottom: 1px solid #e7e9fc;
+}
+
 p,
  h1,
  h2,
@@ -86,9 +90,10 @@ list-style: none
     text-decoration:none;
 }
 
-.header {
+.header-first {
     font-family: 'Roboto' sans-serif;
     font-weight: 500;
+    align-items: center;
     }
 
 .header-logo{
@@ -101,8 +106,8 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-header-logo);
 text-decoration: none;
-margin-right: 76px;
-
+margin-bottom: 16px;
+display: block;
 align-items: center;
 }  
 
@@ -131,7 +136,9 @@ letter-spacing: 0.02em;
 color: var(--color-name);
 text-decoration: none;
 padding-top: 24px;
+padding-bottom: 24px;
 }
+
 .head-link:hover,.head-link:focus {
 color: var(--color-hover-focus);
 }
@@ -152,7 +159,9 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-add-link);
 text-decoration: none;
+display: flex;
 padding-top: 24px;
+gap: 40px;
 
 }
 
@@ -160,6 +169,7 @@ padding-top: 24px;
     display: flex;
     align-items: center;
     gap: 40px;
+    padding-bottom: 24px;
 }
 
 .address-link:hover, .address-link:focus{
@@ -171,11 +181,15 @@ color: #404BBF;
 }
 
 .filter{
-
+padding-top: 96px;
+padding-bottom: 120px;
 }
 
 .filter-list{
-
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .filter-btn{
@@ -188,14 +202,25 @@ letter-spacing: 0.04em;
 color: var(--color-btn);
 background-color:var(--bcg-color-btn);
 cursor: pointer;
+padding: 12px 24px;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 
 .filter-btn:hover, .filter-btn:focus{
 background: #404BBF;
 color: #FFFFFF;
 cursor: pointer;
+border: 1px solid transparent
 }
 
+.card-list{
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+justify-content: center;
+}
 
 .card-name{
 font-weight: 500;
@@ -205,6 +230,17 @@ letter-spacing: 0.02em;
 color: var(--color-name);
 margin-top: 32px;
 margin-bottom: 8px;
+}
+
+.card-item{
+    width: calc((100% - 48px) / 3);
+}
+
+.card-container{
+padding: 32px 16px;
+border: 1px solid #E7E9FC;
+border-top: none;
+
 }
 
 .card-group{
@@ -217,6 +253,8 @@ margin-bottom: 8px;
 
 .footer{
     background: var(--color-footer);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text{
@@ -226,17 +264,20 @@ letter-spacing: 0.02em;
 color: var(--color-footer-text);
 padding-bottom: 100px;
 margin-top: 17.5px;
+max-width: 264px;
 }
     
 /*___________________first page site_____________________*/
 
 .header-logo{
     padding-top: 25.5px;
+    margin-right: 76px 
 }
 
 
 .hero{
     background: #2E2F42;
+    height: 600px;
 }
 
 .hero-header{
@@ -247,12 +288,19 @@ margin-top: 17.5px;
     color: var(--color-hero-header);
     text-align: center;
     padding-top: 188px;
-    padding-bottom: 292px;
+    max-width: 496px;
+    margin: 0 auto;
+
     
 }
 
 .hero-btn{
-display: inline-block;
+display: block;
+margin: 0 auto;
+min-width: 169px;
+height: 56px;
+border: none;
+margin-top: 48px;
 }
 
 .hero-btn{
@@ -268,12 +316,16 @@ cursor: pointer;
 border-radius: 4px;
 padding: 16px 32px;
 
-
 }
 
 .hero-btn:hover ,
 .hero-btn:focus{
 background: var(--color-hover-focus-btn-bkg);
+}
+
+.advantages{
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .advantages-list{
@@ -299,6 +351,9 @@ min-width: 264px;
     color: var(--color-advantages-text);
 }
 
+.mission{
+padding-bottom: 120px;
+}
 
 .mission-head{
     font-style: normal;
@@ -310,6 +365,7 @@ min-width: 264px;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .mission-list{
@@ -321,6 +377,8 @@ min-width: 264px;
 
 .team{
 background: #F4F4FD;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .team-head{
@@ -337,6 +395,10 @@ background: #F4F4FD;
     margin-bottom: 72px;
 }
 
+.team-container{
+padding: 32px 16px;
+}
+
 .team-list{
 display: flex;
 gap: 24px;
@@ -345,6 +407,7 @@ padding-bottom: 120px;
 
 .taem-item{
 background-color: var(--color-taem-item);
+border-radius: 0 0 4px 4px;
 }
 
 .team-name{
@@ -355,8 +418,7 @@ background-color: var(--color-taem-item);
     color: var(--color-team-name);
     margin-bottom: 8px;
     margin-top: 32px;
-    margin-left: 65px;
-    margin-right: 65px;
+    text-align: center;
     
 }
 
@@ -365,6 +427,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-team-group);
+text-align: center;
 }
 
 .footer-container{
