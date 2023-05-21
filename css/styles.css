@@ -330,7 +330,7 @@ background: var(--color-hover-focus-btn-bkg);
     padding-bottom: 120px;
 }
 
-.advantages-head{
+.visually-hidden{
 visibility: hidden;
 }
 
