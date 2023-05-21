@@ -277,7 +277,9 @@ max-width: 264px;
 
 .hero{
     background: #2E2F42;
-    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
 }
 
 .hero-header{
@@ -326,6 +328,10 @@ background: var(--color-hover-focus-btn-bkg);
 .advantages{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.advantages-head{
+visibility: hidden;
 }
 
 .advantages-list{
@@ -430,9 +436,6 @@ color: var(--color-team-group);
 text-align: center;
 }
 
-.footer-container{
-}
-
 .footer-logo{
-
+display: inline-block;
 }
